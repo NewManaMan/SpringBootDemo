@@ -22,6 +22,11 @@ public class TestSpringBoot {
         return "hello world";
     }
 
+    @RequestMapping(value = "/bye")
+    public String bye(){
+        return "bye bye";
+    }
+
     public static void main(String args[]){
         SpringApplication.run(TestSpringBoot.class,args);
     }
